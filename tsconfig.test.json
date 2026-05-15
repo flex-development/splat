@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "customConditions": ["splat", "development", "node"]
+  },
+  "extends": "./tsconfig.json"
+}
