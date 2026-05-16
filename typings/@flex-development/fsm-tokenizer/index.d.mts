@@ -11,6 +11,7 @@ declare module '@flex-development/fsm-tokenizer' {
 
   interface TokenTypeMap {
     questionMark: tt.questionMark
+    separator: tt.separator
   }
 
   interface TokenizeContext {

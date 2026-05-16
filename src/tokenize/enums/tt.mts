@@ -14,7 +14,12 @@ enum tt {
   /**
    * A question mark.
    */
-  questionMark = 'questionMark'
+  questionMark = 'questionMark',
+
+  /**
+   * A path separator.
+   */
+  separator = 'separator'
 }
 
 export default tt

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`integration:tokenize/constructs/questionMark > should tokenize question mark (0) 1`] = `
+exports[`integration:tokenize/constructs/questionMark > should tokenize question mark ("?") 1`] = `
 [
   [
     "enter",
@@ -47,7 +47,7 @@ exports[`integration:tokenize/constructs/questionMark > should tokenize question
 ]
 `;
 
-exports[`integration:tokenize/constructs/questionMark > should tokenize question mark (1) 1`] = `
+exports[`integration:tokenize/constructs/questionMark > should tokenize question mark ("???") 1`] = `
 [
   [
     "enter",

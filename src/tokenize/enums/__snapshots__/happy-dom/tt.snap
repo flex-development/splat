@@ -3,5 +3,6 @@
 exports[`unit:tokenize/enums/tt > should match snapshot 1`] = `
 {
   "questionMark": "questionMark",
+  "separator": "separator",
 }
 `;
