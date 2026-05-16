@@ -119,7 +119,7 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
             environmentOptions: {},
             name: { color, label: environment },
             sequence: { groupOrder },
-            setupFiles: [],
+            setupFiles: [pathe.resolve('__tests__/setup/chai.mts')],
             typecheck: {
               allowJs: false,
               checker: 'tsc',
@@ -132,7 +132,7 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
           }
         }
       }),
-      reporters: JSON.parse(process.env['VITEST_UI'] ?? '0')
+      reporters: JSON.parse(process.env.VITEST_UI ?? '0')
         ? [new Notifier(), ['tree']]
         : env.mode === 'reports'
         ? [['tree']]
@@ -177,7 +177,7 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
       restoreMocks: true,
       server: {
         deps: { // required to apply custom conditions to external deps.
-          inline: ['devlop']
+          inline: ['@flex-development/pathe', 'devlop']
         }
       },
       setupFiles: [],

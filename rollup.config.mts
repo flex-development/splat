@@ -22,7 +22,12 @@ import pkg from './package.json' with { type: 'json' }
  *
  * @const {ReadonlyArray<string>} files
  */
-const files: readonly string[] = ['./dist/index.d.mts', './dist/index.mjs']
+const files: readonly string[] = [
+  './dist/index.d.mts',
+  './dist/index.mjs',
+  './dist/tokenize/index.d.mts',
+  './dist/tokenize/index.mjs'
+]
 
 /**
  * The rollup configuration.
