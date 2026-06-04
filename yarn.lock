@@ -1646,17 +1646,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/fsm-tokenizer@npm:1.0.0-alpha.5":
-  version: 1.0.0-alpha.5
-  resolution: "@flex-development/fsm-tokenizer@npm:1.0.0-alpha.5"
+"@flex-development/fsm-tokenizer@npm:1.0.0-alpha.7":
+  version: 1.0.0-alpha.7
+  resolution: "@flex-development/fsm-tokenizer@npm:1.0.0-alpha.7"
   dependencies:
     "@flex-development/unist-util-builder": "npm:2.0.0"
     "@flex-development/unist-util-types": "npm:1.6.1"
     "@flex-development/vfile-location": "npm:1.1.1"
-    "@types/debug": "npm:4.1.13"
     debug: "npm:4.4.3"
     devlop: "npm:1.1.0"
-  checksum: 10/442708773fbf847ce254702443c61bc856c8dd7978d4fd3f72e9ec134e7c96e6eb96df5004a2a5df3b08fdc4eb0f9f1739144efa06742b935d6d5492cf9905b6
+  checksum: 10/968359e85fda1722ff3707493b1f63d49376910dd7e4d9773463d166deaaddaf2ab549763c9d4fe216827d0896dad094a9d45a75a6de3ff0f220b495b006033b
   languageName: node
   linkType: hard
 
@@ -1964,7 +1963,7 @@ __metadata:
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/eslint-config": "npm:1.1.1"
     "@flex-development/export-regex": "npm:2.0.0"
-    "@flex-development/fsm-tokenizer": "npm:1.0.0-alpha.5"
+    "@flex-development/fsm-tokenizer": "npm:1.0.0-alpha.7"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
     "@flex-development/pathe": "npm:4.0.2"
     "@flex-development/remark-preset": "npm:1.0.0"
@@ -2982,7 +2981,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/debug@npm:4.1.13, @types/debug@npm:^4.0.0":
+"@types/debug@npm:^4.0.0":
   version: 4.1.13
   resolution: "@types/debug@npm:4.1.13"
   dependencies:
