@@ -15,9 +15,18 @@ import fldv from '@flex-development/eslint-config'
 const config = [
   ...fldv.configs.node,
   {
-    files: ['src/tokenize/constructs/*.mts'],
+    files: [
+      'src/tokenize/constructs/*.mts',
+      'src/tokenize/constructs/initialize/*.mts'
+    ],
     rules: {
       'unicorn/no-this-assignment': 0
+    }
+  },
+  {
+    files: ['src/tokenize/tokenize.mts'],
+    rules: {
+      '@typescript-eslint/no-base-to-string': 0
     }
   }
 ]

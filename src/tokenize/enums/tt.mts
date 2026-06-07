@@ -11,14 +11,15 @@ import type { TokenType } from '@flex-development/fsm-tokenizer'
  * @enum {TokenType}
  */
 enum tt {
-  /**
-   * A question mark.
-   */
+  asterisk = 'asterisk',
+  chunkExpression = 'chunkExpression',
+  eoc = 'eoc',
+  escape = 'escape',
+  escapeMarker = 'escapeMarker',
+  escapeValue = 'escapeValue',
+  literal = 'literal',
+  patternNegation = 'patternNegation',
   questionMark = 'questionMark',
-
-  /**
-   * A path separator.
-   */
   separator = 'separator'
 }
 

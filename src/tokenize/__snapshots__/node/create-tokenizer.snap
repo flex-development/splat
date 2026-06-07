@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:tokenize/createTokenizer > should create tokenize context 1`] = `
+{
+  "code": null,
+  "currentConstruct": undefined,
+  "defineSkip": [Function defineSkip],
+  "encoding": undefined,
+  "events": [],
+  "now": [Function now],
+  "parser": {
+    "constructs": {
+      "disable": {
+        "null": [],
+      },
+      "expression": {
+        "42": [
+          {
+            "tokenize": [Function tokenizeAsterisk],
+          },
+        ],
+        "63": [
+          {
+            "tokenize": [Function tokenizeQuestionMark],
+          },
+        ],
+      },
+      "pattern": {
+        "33": [
+          {
+            "name": "patternNegation",
+            "previous": [Function previousPatternNegation],
+            "tokenize": [Function tokenizePatternNegation],
+          },
+        ],
+        "47": [
+          {
+            "tokenize": [Function tokenizeSeparator],
+          },
+        ],
+        "92": [
+          {
+            "tokenize": [Function tokenizeEscape],
+          },
+        ],
+      },
+    },
+    "expression": [Function create],
+    "pattern": [Function create],
+  },
+  "peek": [Function peek],
+  "preprocess": [Function preprocess],
+  "previous": null,
+  "serializeChunks": [Function serializeChunks],
+  "sliceSerialize": [Function sliceSerialize],
+  "sliceStream": [Function sliceStream],
+  "token": [Function token],
+  "write": [Function write],
+}
+`;
+
+exports[`unit:tokenize/createTokenizer > should disable pattern negation with \`options.nonegate\` 1`] = `
+{
+  "null": [
+    "patternNegation",
+  ],
+}
+`;
