@@ -1,8 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`unit:tokenize/enums/tt > should match snapshot 1`] = `
-{
-  "questionMark": "questionMark",
-  "separator": "separator",
-}
-`;
