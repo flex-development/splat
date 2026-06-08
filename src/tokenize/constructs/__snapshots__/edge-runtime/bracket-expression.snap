@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[!]]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[!]]") 1`] = `
 [
   [
     "enter",
@@ -129,7 +129,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[!def]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[!def]") 1`] = `
 [
   [
     "enter",
@@ -258,7 +258,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[.gu.]]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[[.gu.]]") 1`] = `
 [
   [
     "enter",
@@ -385,7 +385,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[:space:]]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[[:space:]]") 1`] = `
 [
   [
     "enter",
@@ -512,7 +512,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[:space:]][[:upper:]!].[-[:lower:]]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[[:space:]][[:upper:]!].[-[:lower:]]") 1`] = `
 [
   [
     "enter",
@@ -967,7 +967,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[=x=]]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[[=x=]]") 1`] = `
 [
   [
     "enter",
@@ -1094,7 +1094,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[]]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[]]") 1`] = `
 [
   [
     "enter",
@@ -1181,7 +1181,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[^xyz]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[^xyz]") 1`] = `
 [
   [
     "enter",
@@ -1310,7 +1310,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[0-9a-z]") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("[0-9a-z]") 1`] = `
 [
   [
     "enter",
@@ -1603,7 +1603,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("src/**index.[!c]ts") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("src/**index.[!c]ts") 1`] = `
 [
   [
     "enter",
@@ -1732,7 +1732,7 @@ exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket ex
 ]
 `;
 
-exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("src/**index.[cm]ts") 1`] = `
+exports[`unit:constructs/bracketExpression > should tokenize bracket expressions ("src/**index.[cm]ts") 1`] = `
 [
   [
     "enter",

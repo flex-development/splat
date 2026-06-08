@@ -14,7 +14,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../escape.mts'
 
-describe('unit:tokenize/constructs/escape', () => {
+describe('unit:constructs/escape', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

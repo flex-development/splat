@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/constructs/rangeExpression > should tokenize range expressions ("0-9") 1`] = `
+exports[`unit:constructs/rangeExpression > should tokenize range expressions ("0-9") 1`] = `
 [
   [
     "enter",
@@ -129,7 +129,7 @@ exports[`unit:tokenize/constructs/rangeExpression > should tokenize range expres
 ]
 `;
 
-exports[`unit:tokenize/constructs/rangeExpression > should tokenize range expressions ("A-C") 1`] = `
+exports[`unit:constructs/rangeExpression > should tokenize range expressions ("A-C") 1`] = `
 [
   [
     "enter",
@@ -258,7 +258,7 @@ exports[`unit:tokenize/constructs/rangeExpression > should tokenize range expres
 ]
 `;
 
-exports[`unit:tokenize/constructs/rangeExpression > should tokenize range expressions ("x-z") 1`] = `
+exports[`unit:constructs/rangeExpression > should tokenize range expressions ("x-z") 1`] = `
 [
   [
     "enter",

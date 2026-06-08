@@ -6,7 +6,7 @@
 import { chars, codes } from '@flex-development/fsm-tokenizer'
 import testSubject from '../nil.mts'
 
-describe('unit:tokenize/internal/nil', () => {
+describe('unit:internal/nil', () => {
   it('should return `false` if `value` is not `null` or `undefined`', () => {
     expect(testSubject(chars.empty)).to.be.false
   })

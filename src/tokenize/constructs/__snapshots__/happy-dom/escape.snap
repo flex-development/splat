@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\!") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\!") 1`] = `
 [
   [
     "enter",
@@ -127,7 +127,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\!") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\&") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\&") 1`] = `
 [
   [
     "enter",
@@ -254,7 +254,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\&") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\'") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\'") 1`] = `
 [
   [
     "enter",
@@ -381,7 +381,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\'") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\(") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\(") 1`] = `
 [
   [
     "enter",
@@ -508,7 +508,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\(") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\)") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\)") 1`] = `
 [
   [
     "enter",
@@ -635,7 +635,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\)") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\+") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\+") 1`] = `
 [
   [
     "enter",
@@ -762,7 +762,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\+") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\,") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\,") 1`] = `
 [
   [
     "enter",
@@ -889,7 +889,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\,") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\/") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\/") 1`] = `
 [
   [
     "enter",
@@ -1016,7 +1016,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\/") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\?") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\?") 1`] = `
 [
   [
     "enter",
@@ -1143,7 +1143,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\?") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\@") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\@") 1`] = `
 [
   [
     "enter",
@@ -1270,7 +1270,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\@") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\[") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\[") 1`] = `
 [
   [
     "enter",
@@ -1397,7 +1397,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\[") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\"") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\\\"") 1`] = `
 [
   [
     "enter",
@@ -1524,7 +1524,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\"") 1
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\\\") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\\\\\") 1`] = `
 [
   [
     "enter",
@@ -1651,7 +1651,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\\\") 
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\]") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\]") 1`] = `
 [
   [
     "enter",
@@ -1778,7 +1778,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\]") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\{") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\{") 1`] = `
 [
   [
     "enter",
@@ -1905,7 +1905,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\{") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\|") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\|") 1`] = `
 [
   [
     "enter",
@@ -2032,7 +2032,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\|") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\}") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("\\\\}") 1`] = `
 [
   [
     "enter",
@@ -2159,7 +2159,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\}") 1`]
 ]
 `;
 
-exports[`unit:tokenize/constructs/escape > should tokenize escapes ("src/pages/api/\\\\[api\\\\].mdx") 1`] = `
+exports[`unit:constructs/escape > should tokenize escapes ("src/pages/api/\\\\[api\\\\].mdx") 1`] = `
 [
   [
     "enter",

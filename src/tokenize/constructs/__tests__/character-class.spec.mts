@@ -14,7 +14,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../character-class.mts'
 
-describe('unit:tokenize/constructs/characterClass', () => {
+describe('unit:constructs/characterClass', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

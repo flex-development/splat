@@ -15,7 +15,7 @@ import {
 import tsconfig from '../../../../tsconfig.build.json'
 import testSubject from '../pattern-negation.mts'
 
-describe('unit:tokenize/constructs/patternNegation', () => {
+describe('unit:constructs/patternNegation', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

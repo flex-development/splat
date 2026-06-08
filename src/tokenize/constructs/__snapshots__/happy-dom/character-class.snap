@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:alnum:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:alnum:]") 1`] = `
 [
   [
     "enter",
@@ -87,7 +87,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:alpha:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:alpha:]") 1`] = `
 [
   [
     "enter",
@@ -174,7 +174,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:ascii:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:ascii:]") 1`] = `
 [
   [
     "enter",
@@ -261,7 +261,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:blank:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:blank:]") 1`] = `
 [
   [
     "enter",
@@ -348,7 +348,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:cntrl:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:cntrl:]") 1`] = `
 [
   [
     "enter",
@@ -435,7 +435,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:digit:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:digit:]") 1`] = `
 [
   [
     "enter",
@@ -522,7 +522,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:graph:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:graph:]") 1`] = `
 [
   [
     "enter",
@@ -609,7 +609,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:lower:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:lower:]") 1`] = `
 [
   [
     "enter",
@@ -696,7 +696,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:print:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:print:]") 1`] = `
 [
   [
     "enter",
@@ -783,7 +783,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:punct:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:punct:]") 1`] = `
 [
   [
     "enter",
@@ -870,7 +870,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:space:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:space:]") 1`] = `
 [
   [
     "enter",
@@ -957,7 +957,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:upper:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:upper:]") 1`] = `
 [
   [
     "enter",
@@ -1044,7 +1044,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:word:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:word:]") 1`] = `
 [
   [
     "enter",
@@ -1131,7 +1131,7 @@ exports[`unit:tokenize/constructs/characterClass > should tokenize character cla
 ]
 `;
 
-exports[`unit:tokenize/constructs/characterClass > should tokenize character classes ("[:xdigit:]") 1`] = `
+exports[`unit:constructs/characterClass > should tokenize character classes ("[:xdigit:]") 1`] = `
 [
   [
     "enter",

@@ -4,6 +4,7 @@
  */
 
 import { EXPORT_AGGREGATE_REGEX } from '@flex-development/export-regex'
+import { STATIC_IMPORT_REGEX } from '@flex-development/import-regex'
 import resolve from '@rollup/plugin-node-resolve'
 import { ok } from 'devlop'
 import type {
@@ -24,8 +25,9 @@ import pkg from './package.json' with { type: 'json' }
  */
 const files: readonly string[] = [
   './dist/index.d.mts',
-  './dist/index.mjs',
+  './dist/ast/index.d.mts',
   './dist/tokenize/index.d.mts',
+  './dist/index.mjs',
   './dist/tokenize/index.mjs'
 ]
 
@@ -100,7 +102,12 @@ function dts(this: void): Plugin[] {
               return type ? match : match.replace('export {', 'export type {')
             })
 
-            output.code = output.code.replaceAll('import {', 'import type {')
+            output.code = output.code.replace(STATIC_IMPORT_REGEX, (
+              match: string,
+              type: string | undefined
+            ) => {
+              return type ? match : match.replace('import', 'import type')
+            })
           }
         }
 

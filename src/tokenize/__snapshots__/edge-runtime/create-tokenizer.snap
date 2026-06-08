@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/createTokenizer > should create tokenize context 1`] = `
+exports[`unit:createTokenizer > should create tokenize context 1`] = `
 {
   "code": null,
   "currentConstruct": undefined,
@@ -65,7 +65,7 @@ exports[`unit:tokenize/createTokenizer > should create tokenize context 1`] = `
 }
 `;
 
-exports[`unit:tokenize/createTokenizer > should disable negation with \`options.nonegate\` 1`] = `
+exports[`unit:createTokenizer > should disable negation with \`options.nonegate\` 1`] = `
 {
   "null": [
     "patternNegation",

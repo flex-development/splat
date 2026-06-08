@@ -7,7 +7,7 @@ import snapshot from '#tests/utils/snapshot-events'
 import type { TokenizeOptions } from '@flex-development/splat/tokenize'
 import testSubject from '../tokenize.mts'
 
-describe('unit:tokenize/tokenize', () => {
+describe('unit:tokenize', () => {
   it.each<[input: unknown, options?: TokenizeOptions | null | undefined]>([
     ['!**'],
     ['!a/b/c*'],

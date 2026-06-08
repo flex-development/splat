@@ -15,7 +15,7 @@ import {
 import tsconfig from '../../../../tsconfig.build.json'
 import testSubject from '../separator.mts'
 
-describe('unit:tokenize/constructs/separator', () => {
+describe('unit:constructs/separator', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

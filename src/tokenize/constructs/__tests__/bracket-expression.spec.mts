@@ -15,7 +15,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../bracket-expression.mts'
 
-describe('unit:tokenize/constructs/bracketExpression', () => {
+describe('unit:constructs/bracketExpression', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

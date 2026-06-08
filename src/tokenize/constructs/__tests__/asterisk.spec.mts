@@ -15,7 +15,7 @@ import {
 import tsconfig from '../../../../tsconfig.build.json'
 import testSubject from '../asterisk.mts'
 
-describe('unit:tokenize/constructs/asterisk', () => {
+describe('unit:constructs/asterisk', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

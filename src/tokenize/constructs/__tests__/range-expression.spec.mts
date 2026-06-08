@@ -14,7 +14,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../range-expression.mts'
 
-describe('unit:tokenize/constructs/rangeExpression', () => {
+describe('unit:constructs/rangeExpression', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

@@ -14,7 +14,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../question-mark.mts'
 
-describe('unit:tokenize/constructs/questionMark', () => {
+describe('unit:constructs/questionMark', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

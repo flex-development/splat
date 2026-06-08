@@ -6,7 +6,7 @@
 import { codes } from '@flex-development/fsm-tokenizer'
 import testSubject from '../is-break.mts'
 
-describe('unit:tokenize/internal/isBreak', () => {
+describe('unit:internal/isBreak', () => {
   it('should return `false` if `code` is not eos or stream break code', () => {
     expect(testSubject(codes.leftBracket)).to.be.false
   })

@@ -14,7 +14,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../equivalence-class.mts'
 
-describe('unit:tokenize/constructs/equivalenceClass', () => {
+describe('unit:constructs/equivalenceClass', () => {
   let context: TokenizeContext
 
   beforeEach(() => {

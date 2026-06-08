@@ -6,7 +6,7 @@
 import type { Point } from '@flex-development/fsm-tokenizer'
 import testSubject from '../create-tokenizer.mts'
 
-describe('unit:tokenize/createTokenizer', () => {
+describe('unit:createTokenizer', () => {
   it('should create tokenize context', () => {
     expect(testSubject()).toMatchSnapshot()
   })

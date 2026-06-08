@@ -8,15 +8,21 @@ import Notifier from '#tests/reporters/notifier'
 import pathe from '@flex-development/pathe'
 import { ok } from 'devlop'
 import ci from 'is-ci'
+import type { Dirent } from 'node:fs'
 import type { LabelColor } from 'vitest'
 import {
   defineConfig,
   type ConfigEnv,
+  type TestProjectInlineConfiguration,
   type ViteUserConfig
 } from 'vitest/config'
-import type { ResolveSnapshotPathHandlerContext } from 'vitest/node'
+import type {
+  BuiltinEnvironment,
+  ResolveSnapshotPathHandlerContext
+} from 'vitest/node'
 import pkg from './package.json' with { type: 'json' }
 import tsconfig from './tsconfig.json' with { type: 'json' }
+import listWorkspaces from './utils/list-workspaces.mts'
 
 export default defineConfig(config)
 
@@ -34,6 +40,13 @@ export default defineConfig(config)
  *  The vitest configuration object
  */
 function config(this: void, env: ConfigEnv): ViteUserConfig {
+  /**
+   * The list of workspace directories.
+   *
+   * @const {ReadonlyArray<Dirent>} workspaces
+   */
+  const workspaces: readonly Dirent[] = listWorkspaces()
+
   return {
     test: {
       allowOnly: !ci,
@@ -52,7 +65,8 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
           '**/__mocks__/',
           '**/__tests__/',
           '**/interfaces/',
-          '**/types/'
+          '**/types/',
+          'src/ast/**/*.mts'
         ],
         ignoreClassMethods: [],
         include: ['src/**/**/*.mts'],
@@ -61,7 +75,7 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
         reporter: env.mode === 'reports'
           ? ['text']
           : [ci ? 'lcovonly' : 'html', 'json-summary', 'text'],
-        reportsDirectory: './coverage',
+        reportsDirectory: 'coverage',
         skipFull: false,
         thresholds: { 100: true, perFile: true }
       },
@@ -75,62 +89,89 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
         junit: pathe.join('__tests__', 'reports', env.mode + '.junit.xml')
       },
       passWithNoTests: true,
-      projects: [
-        'node' as const,
-        'edge-runtime' as const,
-        'happy-dom' as const
-      ].map((environment, groupOrder) => {
+      projects: workspaces.flatMap((
+        workspace: Dirent,
+        groupOrder: number
+      ): TestProjectInlineConfiguration[] => {
         const { customConditions } = tsconfig.compilerOptions
 
         /**
-         * The list of conditions to apply.
+         * Whether the test configurations are for the AST subdomain.
          *
-         * @const {string[]} conditions
+         * @const {boolean} ast
          */
-        const conditions: string[] = Object.assign([], customConditions)
+        const ast: boolean = workspace.name === 'ast'
 
         /**
-         * The project name label color.
+         * The list of environments to test in.
          *
-         * @var {LabelColor} color
+         * @const {BuiltinEnvironment[]} environments
          */
-        let color: LabelColor
+        const environments: BuiltinEnvironment[] = [
+          'node',
+          'edge-runtime',
+          'happy-dom'
+        ]
 
-        switch (environment) {
-          case 'edge-runtime':
-            color = 'magenta'
-            break
-          case 'happy-dom':
-            color = 'blue'
-            conditions.unshift('browser')
-            break
-          default:
-            color = 'blackBright' as LabelColor
-            break
-        }
+        return environments.map(environment => {
+          /**
+           * The list of conditions to apply.
+           *
+           * @const {string[]} conditions
+           */
+          const conditions: string[] = Object.assign([], customConditions)
 
-        return {
-          extends: true as const,
-          resolve: { conditions, preserveSymlinks: true },
-          ssr: { resolve: { conditions } },
-          test: {
-            env: { VITEST_ENVIRONMENT: environment },
-            environment,
-            environmentOptions: {},
-            name: { color, label: environment },
-            sequence: { groupOrder },
-            setupFiles: [pathe.resolve('__tests__/setup/chai.mts')],
-            typecheck: {
-              allowJs: false,
-              checker: 'tsc',
-              enabled: env.mode === 'typecheck',
-              ignoreSourceErrors: false,
-              include: ['**/__tests__/*.spec-d.mts'],
-              only: true,
-              tsconfig: 'tsconfig.typecheck.json'
+          /**
+           * The color of the project name label.
+           *
+           * @var {LabelColor} color
+           */
+          let color: LabelColor
+
+          switch (environment) {
+            case 'edge-runtime':
+              color = 'magenta'
+              break
+            case 'happy-dom':
+              // @ts-expect-error blueBright is a valid color (2322).
+              color = env.mode === 'typecheck' ? 'blueBright' : 'blue'
+              conditions.unshift('browser')
+              break
+            default:
+              color = 'blackBright' as LabelColor
+              break
+          }
+
+          return {
+            extends: true as const,
+            mode: env.mode === 'reports'
+              ? env.mode
+              : ast
+              ? 'typecheck'
+              : env.mode,
+            resolve: { conditions, preserveSymlinks: true },
+            root: workspace.parentPath,
+            ssr: { resolve: { conditions } },
+            test: {
+              env: { VITEST_ENVIRONMENT: environment },
+              environment,
+              environmentOptions: {},
+              include: [`${workspace.name}/**/__tests__/*.spec.mts`],
+              name: { color, label: workspace.name + ':' + environment },
+              sequence: { groupOrder },
+              setupFiles: [pathe.resolve('__tests__/setup/chai.mts')],
+              typecheck: {
+                allowJs: false,
+                checker: 'tsc',
+                enabled: env.mode === 'typecheck',
+                ignoreSourceErrors: false,
+                include: [`${workspace.name}/**/__tests__/*.spec-d.mts`],
+                only: true,
+                tsconfig: pathe.resolve('tsconfig.typecheck.json')
+              }
             }
           }
-        }
+        })
       }),
       reporters: JSON.parse(process.env.VITEST_UI ?? '0')
         ? [new Notifier(), ['tree']]
@@ -177,7 +218,12 @@ function config(this: void, env: ConfigEnv): ViteUserConfig {
       restoreMocks: true,
       server: {
         deps: { // required to apply custom conditions to external deps.
-          inline: ['@flex-development/pathe', 'devlop']
+          inline: [
+            '@flex-development/fsm-tokenizer',
+            '@flex-development/pathe',
+            '@flex-development/unist-util-inspect',
+            'devlop'
+          ]
         }
       },
       setupFiles: [],

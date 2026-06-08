@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/tokenize > should return list of events ("!**") 1`] = `
+exports[`unit:tokenize > should return list of events ("!**") 1`] = `
 [
   [
     "enter",
@@ -131,7 +131,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("!**") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("!a/b/c*") 1`] = `
+exports[`unit:tokenize > should return list of events ("!a/b/c*") 1`] = `
 [
   [
     "enter",
@@ -472,7 +472,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("!a/b/c*") 1`] =
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("") 1`] = `
+exports[`unit:tokenize > should return list of events ("") 1`] = `
 [
   [
     "enter",
@@ -559,7 +559,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("*") 1`] = `
+exports[`unit:tokenize > should return list of events ("*") 1`] = `
 [
   [
     "enter",
@@ -648,7 +648,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("*") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("**") 1`] = `
+exports[`unit:tokenize > should return list of events ("**") 1`] = `
 [
   [
     "enter",
@@ -737,7 +737,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("*****\\\\*****") 1`] = `
+exports[`unit:tokenize > should return list of events ("*****\\\\*****") 1`] = `
 [
   [
     "enter",
@@ -992,7 +992,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("*****\\\\*****"
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("**/(a|b)/*.{mts,md}") 1`] = `
+exports[`unit:tokenize > should return list of events ("**/(a|b)/*.{mts,md}") 1`] = `
 [
   [
     "enter",
@@ -1293,7 +1293,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/(a|b)/*.{mts
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("**/[a-z]/*.{mts,md}") 1`] = `
+exports[`unit:tokenize > should return list of events ("**/[a-z]/*.{mts,md}") 1`] = `
 [
   [
     "enter",
@@ -1716,7 +1716,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/[a-z]/*.{mts
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("**/{1..10..2}/*.mts") 1`] = `
+exports[`unit:tokenize > should return list of events ("**/{1..10..2}/*.mts") 1`] = `
 [
   [
     "enter",
@@ -2017,7 +2017,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/{1..10..2}/*
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("**/{1..10}/*.mts") 1`] = `
+exports[`unit:tokenize > should return list of events ("**/{1..10}/*.mts") 1`] = `
 [
   [
     "enter",
@@ -2318,7 +2318,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/{1..10}/*.mt
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("**/{a,/.gitignore}") 1`] = `
+exports[`unit:tokenize > should return list of events ("**/{a,/.gitignore}") 1`] = `
 [
   [
     "enter",
@@ -2575,7 +2575,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/{a,/.gitigno
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("*.{*,md,mts}") 1`] = `
+exports[`unit:tokenize > should return list of events ("*.{*,md,mts}") 1`] = `
 [
   [
     "enter",
@@ -2792,7 +2792,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("*.{*,md,mts}") 
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("*.{*,md}") 1`] = `
+exports[`unit:tokenize > should return list of events ("*.{*,md}") 1`] = `
 [
   [
     "enter",
@@ -3009,7 +3009,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("*.{*,md}") 1`] 
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("*.{mts,md}") 1`] = `
+exports[`unit:tokenize > should return list of events ("*.{mts,md}") 1`] = `
 [
   [
     "enter",
@@ -3140,7 +3140,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("*.{mts,md}") 1`
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("*.mts") 1`] = `
+exports[`unit:tokenize > should return list of events ("*.mts") 1`] = `
 [
   [
     "enter",
@@ -3271,7 +3271,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("*.mts") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events (".mts") 1`] = `
+exports[`unit:tokenize > should return list of events (".mts") 1`] = `
 [
   [
     "enter",
@@ -3358,7 +3358,7 @@ exports[`unit:tokenize/tokenize > should return list of events (".mts") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("?") 1`] = `
+exports[`unit:tokenize > should return list of events ("?") 1`] = `
 [
   [
     "enter",
@@ -3445,7 +3445,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("?") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("???") 1`] = `
+exports[`unit:tokenize > should return list of events ("???") 1`] = `
 [
   [
     "enter",
@@ -3616,7 +3616,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("???") 1`] = `
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("[a-c]*") 1`] = `
+exports[`unit:tokenize > should return list of events ("[a-c]*") 1`] = `
 [
   [
     "enter",
@@ -3869,7 +3869,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("[a-c]*") 1`] = 
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("a/{b..s}/xyz/*-{01..10}.mts") 1`] = `
+exports[`unit:tokenize > should return list of events ("a/{b..s}/xyz/*-{01..10}.mts") 1`] = `
 [
   [
     "enter",
@@ -4252,7 +4252,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("a/{b..s}/xyz/*-
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("a/b/c{d,e{f,g}}/*.mts") 1`] = `
+exports[`unit:tokenize > should return list of events ("a/b/c{d,e{f,g}}/*.mts") 1`] = `
 [
   [
     "enter",
@@ -4635,7 +4635,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("a/b/c{d,e{f,g}}
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events ("src/**index.[cm]ts") 1`] = `
+exports[`unit:tokenize > should return list of events ("src/**index.[cm]ts") 1`] = `
 [
   [
     "enter",
@@ -4974,7 +4974,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("src/**index.[cm
 ]
 `;
 
-exports[`unit:tokenize/tokenize > should return list of events (null) 1`] = `
+exports[`unit:tokenize > should return list of events (null) 1`] = `
 [
   [
     "enter",

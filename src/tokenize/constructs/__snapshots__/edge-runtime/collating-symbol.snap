@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/constructs/collatingSymbol > should tokenize collating symbols ("[...]") 1`] = `
+exports[`unit:constructs/collatingSymbol > should tokenize collating symbols ("[...]") 1`] = `
 [
   [
     "enter",
@@ -87,7 +87,7 @@ exports[`unit:tokenize/constructs/collatingSymbol > should tokenize collating sy
 ]
 `;
 
-exports[`unit:tokenize/constructs/collatingSymbol > should tokenize collating symbols ("[.rr.]") 1`] = `
+exports[`unit:constructs/collatingSymbol > should tokenize collating symbols ("[.rr.]") 1`] = `
 [
   [
     "enter",

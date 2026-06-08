@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence classes ("[===]") 1`] = `
+exports[`unit:constructs/equivalenceClass > should tokenize equivalence classes ("[===]") 1`] = `
 [
   [
     "enter",
@@ -87,7 +87,7 @@ exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence
 ]
 `;
 
-exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence classes ("[=1=]") 1`] = `
+exports[`unit:constructs/equivalenceClass > should tokenize equivalence classes ("[=1=]") 1`] = `
 [
   [
     "enter",
@@ -174,7 +174,7 @@ exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence
 ]
 `;
 
-exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence classes ("[=E=]") 1`] = `
+exports[`unit:constructs/equivalenceClass > should tokenize equivalence classes ("[=E=]") 1`] = `
 [
   [
     "enter",
@@ -261,7 +261,7 @@ exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence
 ]
 `;
 
-exports[`unit:tokenize/constructs/equivalenceClass > should tokenize equivalence classes ("[=a=]") 1`] = `
+exports[`unit:constructs/equivalenceClass > should tokenize equivalence classes ("[=a=]") 1`] = `
 [
   [
     "enter",

@@ -14,7 +14,7 @@ import {
 } from '@flex-development/fsm-tokenizer'
 import testSubject from '../collating-symbol.mts'
 
-describe('unit:tokenize/constructs/collatingSymbol', () => {
+describe('unit:constructs/collatingSymbol', () => {
   let context: TokenizeContext
 
   beforeEach(() => {
