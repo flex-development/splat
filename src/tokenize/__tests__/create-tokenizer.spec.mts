@@ -22,7 +22,7 @@ describe('unit:tokenize/createTokenizer', () => {
     expect(result.now()).to.eql({ ...from, _bufferIndex: -1, _index: 0 })
   })
 
-  it('should disable pattern negation with `options.nonegate`', () => {
+  it('should disable negation with `options.nonegate`', () => {
     // Act
     const result = testSubject({ nonegate: true })
 

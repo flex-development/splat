@@ -4,16 +4,14 @@
  */
 
 import snapshot from '#tests/utils/snapshot-events'
-import { chars } from '@flex-development/fsm-tokenizer'
 import type { TokenizeOptions } from '@flex-development/splat/tokenize'
 import testSubject from '../tokenize.mts'
 
 describe('unit:tokenize/tokenize', () => {
   it.each<[input: unknown, options?: TokenizeOptions | null | undefined]>([
-    [null],
-    [chars.empty],
     ['!**'],
     ['!a/b/c*'],
+    [''],
     ['*'],
     ['**'],
     ['*****\\*****'],
@@ -29,9 +27,11 @@ describe('unit:tokenize/tokenize', () => {
     ['.mts'],
     ['?'],
     ['???'],
+    ['[a-c]*'],
     ['a/b/c{d,e{f,g}}/*.mts'],
     ['a/{b..s}/xyz/*-{01..10}.mts'],
-    ['src/**index.[cm]ts']
+    ['src/**index.[cm]ts'],
+    [null]
   ])('should return list of events (%j)', (input, options) => {
     // Act
     const result = testSubject(input, options)

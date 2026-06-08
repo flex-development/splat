@@ -24,6 +24,12 @@ exports[`unit:tokenize/createTokenizer > should create tokenize context 1`] = `
             "tokenize": [Function tokenizeQuestionMark],
           },
         ],
+        "91": [
+          {
+            "name": "bracketExpression",
+            "tokenize": [Function tokenizeBracketExpression],
+          },
+        ],
       },
       "pattern": {
         "33": [
@@ -59,10 +65,11 @@ exports[`unit:tokenize/createTokenizer > should create tokenize context 1`] = `
 }
 `;
 
-exports[`unit:tokenize/createTokenizer > should disable pattern negation with \`options.nonegate\` 1`] = `
+exports[`unit:tokenize/createTokenizer > should disable negation with \`options.nonegate\` 1`] = `
 {
   "null": [
     "patternNegation",
+    "bracketNegation",
   ],
 }
 `;

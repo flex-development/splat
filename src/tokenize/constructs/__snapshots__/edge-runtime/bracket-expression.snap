@@ -1,0 +1,1820 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[!]]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "bracketNegation",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "bracketNegation",
+      "value": "!",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "literal",
+      "value": "]",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "literal",
+      "value": "]",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[!def]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "bracketNegation",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "bracketNegation",
+      "value": "!",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "literal",
+      "value": "def",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "literal",
+      "value": "def",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[.gu.]]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 7,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "collatingSymbol",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "collatingSymbolValue",
+      "value": "gu",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "collatingSymbolValue",
+      "value": "gu",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 7,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "collatingSymbol",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[:space:]]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "characterClassValue",
+      "value": "space",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "characterClassValue",
+      "value": "space",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[:space:]][[:upper:]!].[-[:lower:]]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "characterClassValue",
+      "value": "space",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "characterClassValue",
+      "value": "space",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 23,
+        "_index": 0,
+        "column": 24,
+        "line": 1,
+        "offset": 23,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 21,
+        "_index": 0,
+        "column": 22,
+        "line": 1,
+        "offset": 21,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "characterClassValue",
+      "value": "upper",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "characterClassValue",
+      "value": "upper",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 21,
+        "_index": 0,
+        "column": 22,
+        "line": 1,
+        "offset": 21,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 22,
+        "_index": 0,
+        "column": 23,
+        "line": 1,
+        "offset": 22,
+      },
+      "start": {
+        "_bufferIndex": 21,
+        "_index": 0,
+        "column": 22,
+        "line": 1,
+        "offset": 21,
+      },
+      "type": "literal",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 22,
+        "_index": 0,
+        "column": 23,
+        "line": 1,
+        "offset": 22,
+      },
+      "start": {
+        "_bufferIndex": 21,
+        "_index": 0,
+        "column": 22,
+        "line": 1,
+        "offset": 21,
+      },
+      "type": "literal",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 23,
+        "_index": 0,
+        "column": 24,
+        "line": 1,
+        "offset": 23,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 37,
+        "line": 1,
+        "offset": 36,
+      },
+      "start": {
+        "_bufferIndex": 24,
+        "_index": 0,
+        "column": 25,
+        "line": 1,
+        "offset": 24,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 26,
+        "_index": 0,
+        "column": 27,
+        "line": 1,
+        "offset": 26,
+      },
+      "start": {
+        "_bufferIndex": 25,
+        "_index": 0,
+        "column": 26,
+        "line": 1,
+        "offset": 25,
+      },
+      "type": "literal",
+      "value": "-",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 26,
+        "_index": 0,
+        "column": 27,
+        "line": 1,
+        "offset": 26,
+      },
+      "start": {
+        "_bufferIndex": 25,
+        "_index": 0,
+        "column": 26,
+        "line": 1,
+        "offset": 25,
+      },
+      "type": "literal",
+      "value": "-",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 35,
+        "_index": 0,
+        "column": 36,
+        "line": 1,
+        "offset": 35,
+      },
+      "start": {
+        "_bufferIndex": 26,
+        "_index": 0,
+        "column": 27,
+        "line": 1,
+        "offset": 26,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 33,
+        "_index": 0,
+        "column": 34,
+        "line": 1,
+        "offset": 33,
+      },
+      "start": {
+        "_bufferIndex": 28,
+        "_index": 0,
+        "column": 29,
+        "line": 1,
+        "offset": 28,
+      },
+      "type": "characterClassValue",
+      "value": "lower",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 33,
+        "_index": 0,
+        "column": 34,
+        "line": 1,
+        "offset": 33,
+      },
+      "start": {
+        "_bufferIndex": 28,
+        "_index": 0,
+        "column": 29,
+        "line": 1,
+        "offset": 28,
+      },
+      "type": "characterClassValue",
+      "value": "lower",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 35,
+        "_index": 0,
+        "column": 36,
+        "line": 1,
+        "offset": 35,
+      },
+      "start": {
+        "_bufferIndex": 26,
+        "_index": 0,
+        "column": 27,
+        "line": 1,
+        "offset": 26,
+      },
+      "type": "characterClass",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 37,
+        "line": 1,
+        "offset": 36,
+      },
+      "start": {
+        "_bufferIndex": 24,
+        "_index": 0,
+        "column": 25,
+        "line": 1,
+        "offset": 24,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[[=x=]]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 6,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "equivalenceClass",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "equivalenceClassValue",
+      "value": "x",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "equivalenceClassValue",
+      "value": "x",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 6,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "equivalenceClass",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[]]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "literal",
+      "value": "]",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "literal",
+      "value": "]",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[^xyz]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "bracketNegation",
+      "value": "^",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "bracketNegation",
+      "value": "^",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "literal",
+      "value": "xyz",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "literal",
+      "value": "xyz",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("[0-9a-z]") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeStart",
+      "value": "0",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeStart",
+      "value": "0",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "rangeEnd",
+      "value": "9",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "rangeEnd",
+      "value": "9",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 7,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeStart",
+      "value": "a",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeStart",
+      "value": "a",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 7,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 6,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "rangeEnd",
+      "value": "z",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 7,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 6,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "rangeEnd",
+      "value": "z",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 7,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 9,
+        "line": 1,
+        "offset": 8,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("src/**index.[!c]ts") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 16,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 13,
+        "_index": 0,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "bracketNegation",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 13,
+        "_index": 0,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "bracketNegation",
+      "value": "!",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "literal",
+      "value": "c",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "literal",
+      "value": "c",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 16,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;
+
+exports[`unit:tokenize/constructs/bracketExpression > should tokenize bracket expressions ("src/**index.[cm]ts") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 16,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 13,
+        "_index": 0,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "literal",
+      "value": "cm",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 13,
+        "_index": 0,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "literal",
+      "value": "cm",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 16,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+]
+`;

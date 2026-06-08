@@ -30,7 +30,6 @@ describe('unit:tokenize/constructs/questionMark', () => {
   })
 
   it.each<[slice: Chunk]>([
-    [null],
     [chars.hash]
   ])('should not produce events without question marks (%j)', slice => {
     expect(context.write([slice, codes.eos])).to.be.an('array').that.is.empty

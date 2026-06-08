@@ -39,29 +39,16 @@ export default pattern
  *
  * @param {Event[]} events
  *  The current list of events
- * @param {TokenizeContext} context
- *  The tokenize context
  * @return {Event[]}
  *  The list of changed events
  */
-function resolveAllPattern(
-  this: void,
-  events: Event[],
-  context: TokenizeContext
-): Event[] {
+function resolveAllPattern(this: void, events: Event[]): Event[] {
   /**
    * The index of the current event.
    *
    * @var {number} index
    */
   let index: number = -1
-
-  /**
-   * Whether a wildcard token was encountered.
-   *
-   * @var {boolean} wild
-   */
-  let wild: boolean = false
 
   while (++index < events.length) {
     assert(events[index], 'expected events[index]')
@@ -74,26 +61,34 @@ function resolveAllPattern(
     }
 
     // serialize tokens.
-    if (event === ev.enter && token.type !== tt.eoc) {
+    if (
+      event === ev.enter &&
+      token.type !== tt.eoc &&
+      token.type !== tt.bracketExpression &&
+      token.type !== tt.characterClass &&
+      token.type !== tt.collatingSymbol &&
+      token.type !== tt.equivalenceClass &&
+      token.type !== tt.escape &&
+      token.type !== tt.escapeMarker &&
+      token.type !== tt.rangeExpression
+    ) {
       token.value = self.sliceSerialize(token)
 
       // asterisk or sequence of asterisks seen.
       if (token.type === tt.asterisk) {
         assert(typeof token.value === 'string', 'expected `token.value`')
         token.globstar = token.value.length === 2 && !self.noglobstar
-        self.wild = wild = true
         index++
       }
 
       // single question mark seen.
       if (token.type === tt.questionMark) {
-        self.wild = wild = true
         index++
       }
     }
   }
 
-  return context.wild = wild, events
+  return events
 }
 
 /**

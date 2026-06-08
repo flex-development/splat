@@ -8,6 +8,7 @@ import {
   type NormalizedExtension
 } from '@flex-development/fsm-tokenizer'
 import asterisk from './constructs/asterisk.mts'
+import bracketExpression from './constructs/bracket-expression.mts'
 import escape from './constructs/escape.mts'
 import patternNegation from './constructs/pattern-negation.mts'
 import questionMark from './constructs/question-mark.mts'
@@ -29,6 +30,7 @@ const syntax: NormalizedExtension = {
   },
   [ct.expression]: {
     [codes.asterisk]: asterisk,
+    [codes.leftBracket]: bracketExpression,
     [codes.questionMark]: questionMark
   }
 }

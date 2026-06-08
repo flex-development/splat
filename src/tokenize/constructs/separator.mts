@@ -21,6 +21,8 @@ import { ok as assert } from 'devlop'
  * > (`/`) to be separators, even on windows, which is consistent with bash
  * > behavior.
  *
+ * @see {@linkcode Construct}
+ *
  * @const {Construct} separator
  */
 const separator: Construct = { tokenize: tokenizeSeparator }

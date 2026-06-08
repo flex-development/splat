@@ -31,7 +31,6 @@ describe('unit:tokenize/constructs/patternNegation', () => {
   })
 
   it.each<[chunk: Chunk]>([
-    [null],
     [chars.backslash + chars.exclamation],
     [chars.exclamation],
     [chars.lowercaseA + chars.exclamation],

@@ -22,6 +22,8 @@ import { ok as assert } from 'devlop'
  * > backslashes for escaping characters in a glob pattern, even on windows,
  * > which is consistent with bash behavior.
  *
+ * @see {@linkcode Construct}
+ *
  * @const {Construct} escape
  */
 const escape: Construct = { tokenize: tokenizeEscape }

@@ -27,14 +27,25 @@ declare module '@flex-development/fsm-tokenizer' {
 
   interface TokenTypeMap {
     asterisk: tt.asterisk
+    bracketExpression: tt.bracketExpression
+    bracketNegation: tt.bracketNegation
+    characterClass: tt.characterClass
+    characterClassValue: tt.characterClassValue
     chunkExpression: tt.chunkExpression
+    collatingSymbol: tt.collatingSymbol
+    collatingSymbolValue: tt.collatingSymbolValue
     eoc: tt.eoc
+    equivalenceClass: tt.equivalenceClass
+    equivalenceClassValue: tt.equivalenceClassValue
     escape: tt.escape
     escapeMarker: tt.escapeMarker
     escapeValue: tt.escapeValue
     literal: tt.literal
     patternNegation: tt.patternNegation
     questionMark: tt.questionMark
+    rangeEnd: tt.rangeEnd
+    rangeExpression: tt.rangeExpression
+    rangeStart: tt.rangeStart
     separator: tt.separator
   }
 
@@ -45,10 +56,5 @@ declare module '@flex-development/fsm-tokenizer' {
    *
    * @extends {Options}
    */
-  interface TokenizeContext extends Options {
-    /**
-     * Whether the input pattern contains at least one wildcard character.
-     */
-    wild?: boolean | null | undefined
-  }
+  interface TokenizeContext extends Options {}
 }

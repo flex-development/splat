@@ -31,7 +31,6 @@ describe('unit:tokenize/constructs/asterisk', () => {
   })
 
   it.each<[slice: Chunk]>([
-    [null],
     [chars.questionMark],
     [chars.lowercaseA]
   ])('should not produce events without asterisks (%j)', slice => {

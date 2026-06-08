@@ -20,6 +20,8 @@ import { ok as assert } from 'devlop'
  * A single question mark matches any character, excluding path separators,
  * exactly once. They do not match leading dots or path separators.
  *
+ * @see {@linkcode Construct}
+ *
  * @const {Construct} questionMark
  */
 const questionMark: Construct = { tokenize: tokenizeQuestionMark }

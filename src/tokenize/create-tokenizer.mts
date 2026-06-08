@@ -42,8 +42,11 @@ function createTokenizer(
    */
   const disable: Set<TokenType> = new Set<TokenType>()
 
-  // disable support for negation with leading exclamation point.
-  if (options?.nonegate) disable.add(tt.patternNegation)
+  // disable negation.
+  if (options?.nonegate) {
+    disable.add(tt.patternNegation)
+    disable.add(tt.bracketNegation)
+  }
 
   /**
    * The tokenization context.

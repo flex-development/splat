@@ -80,6 +80,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\!") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "!",
     },
   ],
   [
@@ -100,6 +101,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\!") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "!",
     },
   ],
   [
@@ -205,6 +207,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\&") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "&",
     },
   ],
   [
@@ -225,6 +228,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\&") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "&",
     },
   ],
   [
@@ -330,6 +334,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\'") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "'",
     },
   ],
   [
@@ -350,6 +355,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\'") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "'",
     },
   ],
   [
@@ -455,6 +461,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\(") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "(",
     },
   ],
   [
@@ -475,6 +482,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\(") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "(",
     },
   ],
   [
@@ -580,6 +588,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\)") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": ")",
     },
   ],
   [
@@ -600,6 +609,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\)") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": ")",
     },
   ],
   [
@@ -705,6 +715,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\+") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "+",
     },
   ],
   [
@@ -725,6 +736,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\+") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "+",
     },
   ],
   [
@@ -830,6 +842,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\,") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": ",",
     },
   ],
   [
@@ -850,6 +863,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\,") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": ",",
     },
   ],
   [
@@ -955,6 +969,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\/") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "/",
     },
   ],
   [
@@ -975,6 +990,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\/") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "/",
     },
   ],
   [
@@ -1080,6 +1096,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\?") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "?",
     },
   ],
   [
@@ -1100,6 +1117,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\?") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "?",
     },
   ],
   [
@@ -1205,6 +1223,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\@") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "@",
     },
   ],
   [
@@ -1225,6 +1244,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\@") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "@",
     },
   ],
   [
@@ -1330,6 +1350,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\[") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "[",
     },
   ],
   [
@@ -1350,6 +1371,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\[") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "[",
     },
   ],
   [
@@ -1455,6 +1477,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\"") 1
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": """,
     },
   ],
   [
@@ -1475,6 +1498,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\"") 1
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": """,
     },
   ],
   [
@@ -1580,6 +1604,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\\\") 
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "\\",
     },
   ],
   [
@@ -1600,6 +1625,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\\\\\") 
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "\\",
     },
   ],
   [
@@ -1705,6 +1731,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\]") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "]",
     },
   ],
   [
@@ -1725,6 +1752,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\]") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "]",
     },
   ],
   [
@@ -1830,6 +1858,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\{") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "{",
     },
   ],
   [
@@ -1850,6 +1879,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\{") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "{",
     },
   ],
   [
@@ -1955,6 +1985,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\|") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "|",
     },
   ],
   [
@@ -1975,6 +2006,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\|") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "|",
     },
   ],
   [
@@ -2080,6 +2112,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\}") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "}",
     },
   ],
   [
@@ -2100,6 +2133,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("\\\\}") 1`]
         "offset": 1,
       },
       "type": "escapeValue",
+      "value": "}",
     },
   ],
   [
@@ -2205,6 +2239,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("src/pages/a
         "offset": 15,
       },
       "type": "escapeValue",
+      "value": "[",
     },
   ],
   [
@@ -2225,6 +2260,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("src/pages/a
         "offset": 15,
       },
       "type": "escapeValue",
+      "value": "[",
     },
   ],
   [
@@ -2325,6 +2361,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("src/pages/a
         "offset": 20,
       },
       "type": "escapeValue",
+      "value": "]",
     },
   ],
   [
@@ -2345,6 +2382,7 @@ exports[`unit:tokenize/constructs/escape > should tokenize escapes ("src/pages/a
         "offset": 20,
       },
       "type": "escapeValue",
+      "value": "]",
     },
   ],
   [

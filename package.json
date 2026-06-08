@@ -131,6 +131,7 @@
   },
   "dependencies": {
     "@flex-development/fsm-tokenizer": "1.0.0-alpha.9",
+    "devlop": "1.1.0",
     "micromark-util-character": "2.1.1"
   },
   "devDependencies": {
@@ -162,7 +163,6 @@
     "cross-env": "10.1.0",
     "cspell": "10.0.1",
     "delete-empty": "3.0.0",
-    "devlop": "1.1.0",
     "dprint": "0.54.0",
     "editorconfig": "3.0.2",
     "eslint": "9.39.4",

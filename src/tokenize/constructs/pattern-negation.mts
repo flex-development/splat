@@ -18,6 +18,8 @@ import { ok as assert } from 'devlop'
 /**
  * The pattern negation construct.
  *
+ * @see {@linkcode NamedConstruct}
+ *
  * @const {NamedConstruct} patternNegation
  */
 const patternNegation: NamedConstruct = {

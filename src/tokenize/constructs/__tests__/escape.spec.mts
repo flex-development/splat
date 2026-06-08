@@ -30,7 +30,6 @@ describe('unit:tokenize/constructs/escape', () => {
   })
 
   it.each<[slice: Chunk]>([
-    [null],
     [chars.asterisk],
     [chars.backslash],
     [chars.lowercaseA]

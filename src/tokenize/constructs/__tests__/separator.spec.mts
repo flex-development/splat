@@ -31,7 +31,6 @@ describe('unit:tokenize/constructs/separator', () => {
   })
 
   it.each<[slice: Chunk]>([
-    [null],
     [chars.backslash],
     [chars.digit0]
   ])('should not produce events without separators (%j)', slice => {

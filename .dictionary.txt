@@ -1,5 +1,7 @@
+alnum
 attw
 cefc
+cntrl
 commitlintrc
 dedupe
 devlop
@@ -9,8 +11,10 @@ hmarr
 jchen
 kaisugi
 nvmrc
+punct
 shfmt
 unstub
 vates
 vitest
+xdigit
 yarnrc

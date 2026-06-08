@@ -801,7 +801,6 @@ exports[`unit:tokenize/tokenize > should return list of events ("*****\\\\*****"
         "offset": 5,
       },
       "type": "escape",
-      "value": "\\*",
     },
   ],
   [
@@ -822,7 +821,6 @@ exports[`unit:tokenize/tokenize > should return list of events ("*****\\\\*****"
         "offset": 5,
       },
       "type": "escapeMarker",
-      "value": "\\",
     },
   ],
   [
@@ -843,7 +841,6 @@ exports[`unit:tokenize/tokenize > should return list of events ("*****\\\\*****"
         "offset": 5,
       },
       "type": "escapeMarker",
-      "value": "\\",
     },
   ],
   [
@@ -906,7 +903,6 @@ exports[`unit:tokenize/tokenize > should return list of events ("*****\\\\*****"
         "offset": 5,
       },
       "type": "escape",
-      "value": "\\*",
     },
   ],
   [
@@ -1402,8 +1398,131 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/[a-z]/*.{mts
         "line": 1,
         "offset": 3,
       },
-      "type": "literal",
-      "value": "[a-z]",
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeStart",
+      "value": "a",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeStart",
+      "value": "a",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "rangeEnd",
+      "value": "z",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "rangeEnd",
+      "value": "z",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "rangeExpression",
     },
   ],
   [
@@ -1423,8 +1542,7 @@ exports[`unit:tokenize/tokenize > should return list of events ("**/[a-z]/*.{mts
         "line": 1,
         "offset": 3,
       },
-      "type": "literal",
-      "value": "[a-z]",
+      "type": "bracketExpression",
     },
   ],
   [
@@ -3498,6 +3616,259 @@ exports[`unit:tokenize/tokenize > should return list of events ("???") 1`] = `
 ]
 `;
 
+exports[`unit:tokenize/tokenize > should return list of events ("[a-c]*") 1`] = `
+[
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeStart",
+      "value": "a",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeStart",
+      "value": "a",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "rangeEnd",
+      "value": "c",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "rangeEnd",
+      "value": "c",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "rangeExpression",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "globstar": false,
+      "start": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "type": "asterisk",
+      "value": "*",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "globstar": false,
+      "start": {
+        "_bufferIndex": 5,
+        "_index": 0,
+        "column": 6,
+        "line": 1,
+        "offset": 5,
+      },
+      "type": "asterisk",
+      "value": "*",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
 exports[`unit:tokenize/tokenize > should return list of events ("a/{b..s}/xyz/*-{01..10}.mts") 1`] = `
 [
   [
@@ -4398,11 +4769,11 @@ exports[`unit:tokenize/tokenize > should return list of events ("src/**index.[cm
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 19,
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 13,
         "line": 1,
-        "offset": 18,
+        "offset": 12,
       },
       "start": {
         "_bufferIndex": 2,
@@ -4412,7 +4783,131 @@ exports[`unit:tokenize/tokenize > should return list of events ("src/**index.[cm
         "offset": 6,
       },
       "type": "literal",
-      "value": "index.[cm]ts",
+      "value": "index.",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 7,
+        "line": 1,
+        "offset": 6,
+      },
+      "type": "literal",
+      "value": "index.",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 9,
+        "_index": 0,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "literal",
+      "value": "cm",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 9,
+        "_index": 0,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "literal",
+      "value": "cm",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 8,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "bracketExpression",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 19,
+        "line": 1,
+        "offset": 18,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "type": "literal",
+      "value": "ts",
     },
   ],
   [
@@ -4426,14 +4921,14 @@ exports[`unit:tokenize/tokenize > should return list of events ("src/**index.[cm
         "offset": 18,
       },
       "start": {
-        "_bufferIndex": 2,
+        "_bufferIndex": 12,
         "_index": 0,
-        "column": 7,
+        "column": 17,
         "line": 1,
-        "offset": 6,
+        "offset": 16,
       },
       "type": "literal",
-      "value": "index.[cm]ts",
+      "value": "ts",
     },
   ],
   [
