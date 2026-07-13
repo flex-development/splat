@@ -145,7 +145,7 @@
     "micromark-util-character": "2.1.1"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.18.4",
+    "@arethetypeswrong/cli": "0.18.5",
     "@commitlint/cli": "21.2.1",
     "@commitlint/types": "21.2.0",
     "@edge-runtime/vm": "5.0.0",
